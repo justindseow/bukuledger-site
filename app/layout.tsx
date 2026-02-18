@@ -2,31 +2,50 @@ import "./globals.css";
 import Header from "./components/Header";
 
 export const metadata = {
-  title: "BukuLedger | Bookkeeping Malaysia",
-  description: "Bookkeeping for MSMEs and SMEs across Malaysia. Simpan kira untuk SME di Malaysia.",
+  metadataBase: new URL("https://example.com"), // TODO: replace with real domain
+  title: {
+    default: "BukuLedger | Bookkeeping Malaysia",
+    template: "%s | BukuLedger",
+  },
+  description:
+    "Bookkeeping for MSMEs and SMEs across Malaysia. Simpan kira untuk SME di Malaysia.",
+  alternates: {
+    canonical: "/en",
+    languages: {
+      "en-MY": "/en",
+      "ms-MY": "/bm",
+      en: "/en",
+      ms: "/bm",
+    },
+  },
+  openGraph: {
+    title: "BukuLedger | Bookkeeping Malaysia",
+    description:
+      "Bookkeeping for MSMEs and SMEs across Malaysia. Simpan kira untuk SME di Malaysia.",
+    url: "https://example.com/en", // TODO
+    siteName: "BukuLedger",
+    locale: "en_MY",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BukuLedger | Bookkeeping Malaysia",
+    description:
+      "Bookkeeping for MSMEs and SMEs across Malaysia. Simpan kira untuk SME di Malaysia.",
+  },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className="bg-white text-gray-900">
+      <body>
         <Header />
+        {children}
 
-
-        <main>{children}</main>
-
-        <footer className="border-t mt-16">
-          <div className="max-w-6xl mx-auto px-6 py-10 text-sm text-gray-500">
-            <div className="flex flex-col md:flex-row gap-4 md:items-center md:justify-between">
-              <p>© {new Date().getFullYear()} BukuLedger Malaysia</p>
-              <p className="text-gray-400">
-                Bookkeeping for MSMEs & SMEs across Malaysia
-              </p>
-            </div>
+        <footer className="site-footer">
+          <div className="container site-footer-inner">
+            <p>© {new Date().getFullYear()} BukuLedger Malaysia</p>
+            <p className="muted">Bookkeeping for MSMEs & SMEs across Malaysia</p>
           </div>
         </footer>
       </body>

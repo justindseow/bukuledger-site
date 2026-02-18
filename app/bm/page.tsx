@@ -1,41 +1,55 @@
 export default function BmHome() {
   return (
-    <div>
-      <section className="bg-slate-50 py-20">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <div className="pill inline-block mb-4">
-          Dipercayai oleh SME Malaysia
-          </div>
+    <main className="hero">
+      <div className="container hero-grid">
+        {/* LEFT */}
+        <section>
+          <span className="badge">Untuk MSME & SME di Malaysia</span>
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Perkhidmatan Simpan Kira untuk MSME & SME di Malaysia
+          <h1 className="h1">
+            Simpan kira yang<br />
+            tidak menyusahkan —<br />
+            dan pastikan akaun kemas.
           </h1>
 
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Rekod kemas, nombor jelas, dan penutupan bulanan lebih lancar — tanpa pening kepala.
+          <p className="lead">
+            Simpan kira bulanan yang pantas, tepat, dan boleh dipercayai untuk bisnes di Malaysia.
+            Rekonsiliasi yang jelas, laporan mudah difahami, dan kurang stres hujung bulan.
           </p>
 
-          <div className="flex gap-3 justify-center flex-wrap">
-            <a
-              href="/bm/contact"
-              className="btn-primary hover:opacity-95"
-            >
-              Dapatkan Sebut Harga
-            </a>
-
-            <a
-              href="https://wa.me/60123456789?text=Hai%20BukuLedger%2C%20saya%20berminat%20untuk%20simpan%20kira.%20Syarikat%3A%20____%20Industri%3A%20____%20Transaksi%2Fbulan%3A%20____"
-              className="btn-secondary hover:bg-slate-50"
-            >
-              WhatsApp Kami
-            </a>
+          <div className="cta-row">
+            <a href="/bm/contact" className="btn-primary">Minta sebut harga</a>
+            <a href="/bm/services" className="btn-secondary">Lihat servis</a>
           </div>
 
-          <p className="text-sm text-gray-500 mt-6">
-            Melayani perniagaan di seluruh Malaysia
-          </p>
-        </div>
-      </section>
-    </div>
+          <div className="note">Biasanya kami balas dalam 1 hari bekerja.</div>
+        </section>
+
+        {/* RIGHT */}
+        <aside className="panel">
+          <div className="panel-grid">
+            <div className="card">
+              <h3>Akaun kemas</h3>
+              <p>Rekonsiliasi bulanan, pengkategorian transaksi, dan lejar tersusun.</p>
+            </div>
+
+            <div className="card">
+              <h3>Nombor jelas</h3>
+              <p>Ringkasan bulanan dan laporan yang memang akan dibaca.</p>
+            </div>
+
+            <div className="card card-wide">
+              <h3>Sedia untuk lead-gen</h3>
+              <p>WhatsApp + borang — memudahkan prospek hubungi anda dengan cepat.</p>
+
+              <div className="card-actions">
+                <a className="btn-primary" href="https://wa.me/60123456789">WhatsApp kami</a>
+                <a className="btn-secondary" href="/bm/contact">Hantar mesej</a>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
   );
 }

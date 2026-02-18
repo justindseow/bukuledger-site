@@ -8,17 +8,30 @@ export default function Header() {
   const base = isBM ? "/bm" : "/en";
 
   return (
-    <header className="border-b bg-white">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" className="font-bold text-lg"><span className="text-[color:var(--primary)]">Buku</span>Ledger</a>
+    <header className="site-header">
+      <div className="container site-header-inner">
+        {/* not clickable */}
+        <div className="brand">
+          Buku<span className="accent">Ledger</span>
+        </div>
 
-        <nav className="flex items-center gap-4 text-sm">
-          <a href="/en" className="hover:underline">EN</a>
-          <a href="/bm" className="hover:underline">BM</a>
-          <a href={`${base}/services`} className="hover:underline">
+        <nav className="nav">
+          <a href="/en">EN</a>
+          <a href="/bm">BM</a>
+
+          <a href={`${base}/services`}>
             {isBM ? "Servis" : "Services"}
           </a>
-          <a href={`${base}/contact`} className="hover:underline">
+
+          <a href={`${base}/pricing`}>
+            {isBM ? "Harga" : "Pricing"}
+          </a>
+
+          <a href={`${base}/faq`}>
+            {isBM ? "Soalan Lazim" : "FAQ"}
+          </a>
+
+          <a href={`${base}/contact`}>
             {isBM ? "Hubungi" : "Contact"}
           </a>
         </nav>

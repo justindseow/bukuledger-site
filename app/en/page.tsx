@@ -1,66 +1,50 @@
 export default function EnHome() {
   return (
-    <div>
-      <section className="bg-slate-50 py-20">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <div className="pill inline-block mb-4">
-          Trusted by Malaysian SMEs
-          </div>
-          
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Bookkeeping for Malaysian MSMEs & SMEs
+    <main className="hero">
+      <div className="container hero-grid">
+        <section>
+          <span className="badge">Built for Malaysian MSMEs</span>
+
+          <h1 className="h1">
+            Bookkeeping handled properly.Without the hassle.<br />
           </h1>
 
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Clean books, clear numbers, and a smoother month-end — without the headache.
+          <p className="lead">
+            Reliable monthly bookkeeping for Malaysian MSMEs. We manage your records, reconciliations and reports so you do not need extra software, systems or staff.
           </p>
 
-          <div className="flex gap-3 justify-center flex-wrap">
-            <a href="/en/contact" className="btn-primary hover:opacity-95">
-              Get a Quote
-            </a>
-
-            <a href="https://wa.me/60123456789" className="btn-secondary hover:bg-slate-50">
-              WhatsApp Us
-            </a>
+          <div className="cta-row">
+            <a href="/en/contact" className="btn-primary">Get a quote</a>
+            <a href="/en/services" className="btn-secondary">See services</a>
           </div>
 
-          <p className="text-sm text-gray-500 mt-6">
-            Serving businesses across Malaysia
-          </p>
-        </div>
-      </section>
+          <div className="note">Typical response within 1 business day.</div>
+        </section>
 
-      <section className="py-20">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-2xl font-bold mb-10 text-center">How it works</h2>
+        <aside className="panel">
+          <div className="panel-grid">
+            <div className="card">
+              <h3>Clean Books</h3>
+              <p>Monthly reconciliation, proper categorisation, and well-maintained ledgers that stay up to date.</p>
+            </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { title: "Share documents", desc: "Bank statements, invoices, receipts (digital is fine)." },
-              { title: "We reconcile & organise", desc: "Categorisation, matching, clean monthly close." },
-              { title: "Receive monthly reports", desc: "P&L, balance sheet, and a clear summary." },
-            ].map((x) => (
-              <div key={x.title} className="card shadow-sm">
-                <p className="font-semibold mb-2">{x.title}</p>
-                <p className="text-sm text-gray-600">{x.desc}</p>
+            <div className="card">
+              <h3>Clear Numbers</h3>
+              <p>Simple monthly reports that show where your money is going. No accounting jargon. No confusion.</p>
+            </div>
+
+            <div className="card card-wide">
+              <h3>Fully Managed</h3>
+              <p>Just send us your documents. No additional software to learn, subscribe or manage.</p>
+
+              <div className="card-actions">
+                <a className="btn-primary" href="https://wa.me/60123456789">Talk on WhatsApp</a>
+                <a className="btn-secondary" href="/en/contact">Send a message</a>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section className="btn-primary text-white py-16">
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <h2 className="text-2xl font-bold mb-3">Ready to simplify your bookkeeping?</h2>
-          <p className="text-white/80 mb-6">
-            Tell us your business size and current setup — we’ll recommend a simple monthly plan.
-          </p>
-          <a href="/en/contact" className="bg-white text-blue-700 px-6 py-3 rounded-lg inline-block">
-            Get Started
-          </a>
-        </div>
-      </section>
-    </div>
+        </aside>
+      </div>
+    </main>
   );
 }
