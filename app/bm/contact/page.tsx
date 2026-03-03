@@ -7,24 +7,33 @@ export default function BmContact() {
           Beritahu kami tentang perniagaan anda. Kami akan balas dengan pelan bulanan yang ringkas.
         </p>
 
-        <form className="form">
-          <input className="input" placeholder="Nama" />
-          <input className="input" placeholder="Syarikat" />
-          <input className="input" placeholder="Emel" />
+        <form
+          className="form"
+          action="https://formsubmit.co/accounts@macrobyte.my"
+          method="POST"
+        >
+          {/* FormSubmit settings */}
+          <input type="hidden" name="_subject" value="New MacroByte Quote Request (BM)" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://macrobyte.my/bm/thank-you" />
 
-          <select className="input" defaultValue="">
+          <input className="input" name="nama" placeholder="Nama" required />
+          <input className="input" name="syarikat" placeholder="Syarikat" required />
+          <input className="input" name="emel" placeholder="Emel" type="email" required />
+
+          <select className="input" name="anggaran_transaksi_bulanan" defaultValue="" required>
             <option value="" disabled>
               Anggaran transaksi bulanan
             </option>
-            <option>0–50</option>
-            <option>51–200</option>
-            <option>201–500</option>
-            <option>500+</option>
+            <option value="0-50">0–50</option>
+            <option value="51-200">51–200</option>
+            <option value="201-500">201–500</option>
+            <option value="500+">500+</option>
           </select>
 
-          <textarea className="input" placeholder="Mesej" rows={5} />
+          <textarea className="input" name="mesej" placeholder="Mesej" rows={5} />
 
-          <button type="button" className="btn-primary">
+          <button type="submit" className="btn-primary">
             Hantar
           </button>
         </form>

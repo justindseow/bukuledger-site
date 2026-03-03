@@ -18,7 +18,7 @@ export default function EnFaq() {
     },
     {
       q: "How long does it take to complete monthly bookkeeping?",
-      a: "MMost clients receive their monthly reports within 7 business days after submitting complete documents.",
+      a: "Most clients receive their monthly reports within 7 business days after submitting complete documents.",
     },
     {
       q: "Can you help with overdue or messy accounts?",

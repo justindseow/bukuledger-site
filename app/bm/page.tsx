@@ -12,7 +12,7 @@ export default function BmHome() {
             className="badge"
             style={{ alignSelf: "flex-start", width: "fit-content" }}
           >
-            Dibina untuk PKS Malaysia
+            Dibina untuk SME
           </span>
 
           <h1 className="h1">

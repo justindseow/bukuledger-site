@@ -1,3 +1,5 @@
+// app/en/contact/page.tsx (or wherever your EN contact page lives)
+
 export default function EnContact() {
   return (
     <main className="page">
@@ -7,24 +9,38 @@ export default function EnContact() {
           Tell us about your business. We’ll reply with a simple monthly plan.
         </p>
 
-        <form className="form">
-          <input className="input" placeholder="Name" />
-          <input className="input" placeholder="Company" />
-          <input className="input" placeholder="Email" />
+        <form
+          className="form"
+          action="https://formsubmit.co/accounts@macrobyte.my"
+          method="POST"
+        >
+          {/* FormSubmit settings */}
+          <input type="hidden" name="_subject" value="New MacroByte Quote Request (EN)" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://macrobyte.my/en/thank-you" />
 
-          <select className="input" defaultValue="">
+          <input className="input" name="name" placeholder="Name" required />
+          <input className="input" name="company" placeholder="Company" required />
+          <input className="input" name="email" placeholder="Email" type="email" required />
+
+          <select className="input" name="monthly_transactions" defaultValue="" required>
             <option value="" disabled>
               Monthly transactions (estimate)
             </option>
-            <option>0–50</option>
-            <option>51–200</option>
-            <option>201–500</option>
-            <option>500+</option>
+            <option value="0-50">0–50</option>
+            <option value="51-200">51–200</option>
+            <option value="201-500">201–500</option>
+            <option value="500+">500+</option>
           </select>
 
-          <textarea className="input" placeholder="Message" rows={5} />
+          <textarea
+            className="input"
+            name="message"
+            placeholder="Message"
+            rows={5}
+          />
 
-          <button type="button" className="btn-primary">
+          <button type="submit" className="btn-primary">
             Submit
           </button>
         </form>
