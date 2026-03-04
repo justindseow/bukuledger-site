@@ -32,7 +32,7 @@ export default function ZhFaq() {
         <h1 className="page-title">常见问题</h1>
 
         <p className="page-lead">
-          BukuLedger 在马来西亚提供的记账服务常见问题解答。
+          MacroByte 在马来西亚提供的记账服务常见问题解答。
         </p>
 
         <div style={{ marginTop: 28, display: "grid", gap: 16 }}>

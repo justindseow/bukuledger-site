@@ -4,9 +4,9 @@ export default function BmThankYou() {
   return (
     <main className="page">
       <div className="container narrow">
-        <h1 className="page-title">Terima kasih</h1>
+        <h1 className="page-title">Terima kasih. Kami telah menerima permintaan anda</h1>
         <p className="page-lead">
-          Kami telah terima permintaan anda. Kami akan balas dengan pelan bulanan yang ringkas.
+          Kami akan membalas degan pelan bulanan yang ringkas.
         </p>
 
         <div className="center-note">

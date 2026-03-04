@@ -32,7 +32,7 @@ export default function BmFaq() {
         <h1 className="page-title">Soalan Lazim</h1>
 
         <p className="page-lead">
-          Soalan lazim mengenai perkhidmatan perakaunan BukuLedger di Malaysia.
+          Soalan lazim mengenai perkhidmatan perakaunan MacroByte di Malaysia.
         </p>
 
         <div style={{ marginTop: 28, display: "grid", gap: 16 }}>

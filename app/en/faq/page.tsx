@@ -32,7 +32,7 @@ export default function EnFaq() {
         <h1 className="page-title">Frequently Asked Questions</h1>
 
         <p className="page-lead">
-          Common questions about BukuLedger’s bookkeeping services in Malaysia.
+          Common questions about MacroByte’s bookkeeping services in Malaysia.
         </p>
 
         <div style={{ marginTop: 28, display: "grid", gap: 16 }}>
