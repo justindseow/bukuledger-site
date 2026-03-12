@@ -189,8 +189,8 @@ export const content: Record<Locale, LocaleContent> = {
           "Bank reconciliation & transaction categorisation",
           "Month-end ledger close",
           "Profit & Loss and Balance Sheet",
-          "Cashflow view & transaction summary",
-          "Ongoing questions and support",
+          "Trial Balance",
+          "Management analysis",
         ],
       },
       ar: {
