@@ -11,7 +11,8 @@ export default function Home() {
           position: "relative",
           minHeight: "calc(100vh - 56px)",
           display: "flex",
-          alignItems: "center",
+          alignItems: "flex-start",
+          paddingTop: "110px",
           overflow: "hidden",
         }}
       >
