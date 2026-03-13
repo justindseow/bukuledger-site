@@ -52,7 +52,7 @@ export default function ServicesPage({ locale }: { locale: Locale }) {
               <span className="svc-core-badge">Core Service</span>
               <h2
                 className="svc-card-title"
-                style={{ fontSize: "1.4rem", marginTop: 10 }}
+                style={{ fontSize: "1.4rem", marginTop: 6 }}
               >
                 {t.bookkeeping.title}
               </h2>
@@ -93,7 +93,7 @@ export default function ServicesPage({ locale }: { locale: Locale }) {
 
           <div
             style={{
-              marginTop: 20,
+              marginTop: 14,
               display: "flex",
               gap: 10,
               flexWrap: "wrap",
