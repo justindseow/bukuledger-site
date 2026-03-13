@@ -186,16 +186,17 @@ export const content: Record<Locale, LocaleContent> = {
         title: "Bookkeeping",
         tagline: "Your numbers, kept in order every month.",
         items: [
-          "Bank reconciliation & transaction categorisation",
-          "General Ledger",
-          "Profit & Loss and Balance Sheet",
+          "Bank Reconciliation",
+          "Transaction Categorisation",
           "Trial Balance",
-          "Management analysis",
+          "Profit & Loss",
+          "Balance Sheet",
+          "Management Analysis",
         ],
       },
       ar: {
         title: "Accounts Receivable",
-        tagline: "Know exactly what customers owe and follow up faster.",
+        tagline: "Know exactly what customers owe to follow-up faster.",
         items: [
           "Invoice tracking and recording",
           "Aging report — overdue at a glance",
@@ -215,7 +216,7 @@ export const content: Record<Locale, LocaleContent> = {
       },
       payroll: {
         title: "Payroll",
-        tagline: "Accurate, on-time payroll with all statutory deductions handled.",
+        tagline: "On-time payroll with statutory deductions.",
         items: [
           "Monthly salary computation",
           "EPF, SOCSO, EIS and PCB deductions",
