@@ -178,7 +178,7 @@ export const content: Record<Locale, LocaleContent> = {
       waText: "Hi MacroByte, I'm interested in monthly bookkeeping. My estimated monthly transactions are ____.",
     },
     services: {
-      title: "Our Services",
+      title: "Bookkeeping & Finance Services",
       lead: "Choose one module, combine a few, or take the complete package.",
       addonSectionTitle: "Enhance with add-ons",
       addonSectionSubtitle: "Layer on any of these to extend your finance coverage.",
@@ -236,7 +236,7 @@ export const content: Record<Locale, LocaleContent> = {
       waText: "Hi MacroByte. I'd like to ask about your services.",
     },
     pricing: {
-      title: "Pricing",
+      title: "Bookkeeping Pricing for Malaysian SMEs",
       lead: "Straightforward monthly pricing for each service. Take one, or combine.",
       from: "From",
       per: "/ month",
@@ -367,7 +367,7 @@ export const content: Record<Locale, LocaleContent> = {
         "Hi MacroByte, Saya berminat dengan perkhidmatan akaun bulanan. Anggaran transaksi bulanan saya adalah ____.",
     },
     services: {
-      title: "Perkhidmatan Kami",
+      title: "Perkhidmatan Perakaunan & Kewangan untuk PKS",
       lead: "Pilih satu modul, gabungkan beberapa, atau ambil pakej lengkap.",
       addonSectionTitle: "Tingkatkan dengan perkhidmatan tambahan",
       addonSectionSubtitle: "Tambah mana-mana perkhidmatan ini untuk liputan kewangan yang lebih lengkap.",
@@ -424,7 +424,7 @@ export const content: Record<Locale, LocaleContent> = {
       waText: "Hi MacroByte. Saya ingin bertanya tentang perkhidmatan anda.",
     },
     pricing: {
-      title: "Harga",
+      title: "Harga Perkhidmatan Perakaunan untuk PKS Malaysia",
       lead: "Harga bulanan yang jelas untuk setiap perkhidmatan. Pilih satu atau gabungkan.",
       from: "Dari",
       per: "/ bulan",
@@ -567,7 +567,7 @@ export const content: Record<Locale, LocaleContent> = {
         "Hi MacroByte，我有兴趣了解每月记账服务。我来自首页。我的每月交易数量大约是____。",
     },
     services: {
-      title: "我们的服务",
+      title: "记账与财务服务",
       lead: "按需选择一项、自由搭配，或直接选完整套餐。",
       addonSectionTitle: "附加服务",
       addonSectionSubtitle: "搭配任意附加服务，打造更完整的财务管理体系。",
@@ -624,7 +624,7 @@ export const content: Record<Locale, LocaleContent> = {
       waText: "Hi MacroByte. 我想询问您的服务。",
     },
     pricing: {
-      title: "价格",
+      title: "记账服务收费方案",
       lead: "清晰透明的月费定价，按服务选择。单选或自由组合。",
       from: "起",
       per: "/ 每月",

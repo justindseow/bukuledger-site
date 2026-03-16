@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import type { Metadata } from "next";
 import { headers } from "next/headers";
 
-const SITE_URL = "https://www.macrobyte.my";
+const SITE_URL = "https://macrobyte.my";
 const BRAND = "MacroByte";
 
 export const metadata: Metadata = {

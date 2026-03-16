@@ -1,5 +1,6 @@
 // app/sitemap.ts
 import type { MetadataRoute } from "next";
+import { insights } from "@/app/lib/insights";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://macrobyte.my";
@@ -32,6 +33,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/en/faq",
     "/bm/faq",
     "/zh/faq",
+
+    // insights listing
+    "/en/insights",
     // thank-you pages are excluded (noindex, should not be crawled)
   ];
 
@@ -52,10 +56,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return "monthly";
   };
 
-  return routes.map((path) => ({
-    url: `${baseUrl}${path}`,
-    lastModified: now,
-    changeFrequency: changeFrequency(path),
-    priority: priority(path),
+  const insightEntries: MetadataRoute.Sitemap = insights.map((insight) => ({
+    url: `${baseUrl}/en/insights/${insight.slug}`,
+    lastModified: new Date(insight.date),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
   }));
+
+  return [
+    ...routes.map((path) => ({
+      url: `${baseUrl}${path}`,
+      lastModified: now,
+      changeFrequency: changeFrequency(path),
+      priority: priority(path),
+    })),
+    ...insightEntries,
+  ];
 }
