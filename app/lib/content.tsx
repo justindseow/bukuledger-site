@@ -34,8 +34,7 @@ export interface ServiceModule {
 
 export interface LocaleContent {
   nav: {
-    services: string;
-    pricing: string;
+    packages: string;
     faq: string;
     contact: string;
   };
@@ -152,8 +151,7 @@ export const content: Record<Locale, LocaleContent> = {
   // ── English ────────────────────────────────────────────────────────────────
   en: {
     nav: {
-      services: "Services",
-      pricing: "Pricing",
+      packages: "Packages",
       faq: "FAQ",
       contact: "Contact",
     },
@@ -236,8 +234,8 @@ export const content: Record<Locale, LocaleContent> = {
       waText: "Hi MacroByte. I'd like to ask about your services.",
     },
     pricing: {
-      title: "Bookkeeping Pricing for Malaysian SMEs",
-      lead: "Straightforward monthly pricing for each service. Take one, or combine.",
+      title: "Bookkeeping & Finance Packages for Malaysian SMEs",
+      lead: "Everything included, clearly priced. Choose one module or combine.",
       from: "From",
       per: "/ month",
       bkTitle: "Bookkeeping",
@@ -340,8 +338,7 @@ export const content: Record<Locale, LocaleContent> = {
   // ── Bahasa Melayu ──────────────────────────────────────────────────────────
   bm: {
     nav: {
-      services: "Servis",
-      pricing: "Harga",
+      packages: "Pakej",
       faq: "Soalan Lazim",
       contact: "Hubungi",
     },
@@ -424,8 +421,8 @@ export const content: Record<Locale, LocaleContent> = {
       waText: "Hi MacroByte. Saya ingin bertanya tentang perkhidmatan anda.",
     },
     pricing: {
-      title: "Harga Perkhidmatan Perakaunan untuk PKS Malaysia",
-      lead: "Harga bulanan yang jelas untuk setiap perkhidmatan. Pilih satu atau gabungkan.",
+      title: "Pakej Perakaunan & Kewangan untuk PKS Malaysia",
+      lead: "Semua termasuk, harga yang jelas. Pilih satu modul atau gabungkan.",
       from: "Dari",
       per: "/ bulan",
       bkTitle: "Perakaunan",
@@ -540,8 +537,7 @@ export const content: Record<Locale, LocaleContent> = {
   // ── 中文 ───────────────────────────────────────────────────────────────────
   zh: {
     nav: {
-      services: "服务",
-      pricing: "价格",
+      packages: "套餐",
       faq: "常见问题",
       contact: "联系",
     },
@@ -624,8 +620,8 @@ export const content: Record<Locale, LocaleContent> = {
       waText: "Hi MacroByte. 我想询问您的服务。",
     },
     pricing: {
-      title: "记账服务收费方案",
-      lead: "清晰透明的月费定价，按服务选择。单选或自由组合。",
+      title: "记账与财务服务套餐",
+      lead: "服务内容清晰，定价透明。单选或自由组合。",
       from: "起",
       per: "/ 每月",
       bkTitle: "记账服务",

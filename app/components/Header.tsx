@@ -13,8 +13,7 @@ export default function Header() {
   const base = isBM ? "/bm" : isZH ? "/zh" : "/en";
 
   const t = {
-    services: isBM ? "Servis" : isZH ? "服务" : "Services",
-    pricing: isBM ? "Harga" : isZH ? "价格" : "Pricing",
+    packages: isBM ? "Pakej" : isZH ? "套餐" : "Packages",
     faq: isBM ? "Soalan Lazim" : isZH ? "常见问题" : "FAQ",
     contact: isBM ? "Hubungi" : isZH ? "联系" : "Contact",
     insights: isBM ? "Panduan" : isZH ? "指南" : "Insights",
@@ -31,8 +30,7 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="nav nav-desktop">
-          <a href={`${base}/services`} className={pathname.includes("/services") ? "nav-active" : ""}>{t.services}</a>
-          <a href={`${base}/pricing`} className={pathname.includes("/pricing") ? "nav-active" : ""}>{t.pricing}</a>
+          <a href={`${base}/packages`} className={pathname.includes("/packages") ? "nav-active" : ""}>{t.packages}</a>
           <a href={`${base}/faq`} className={pathname.includes("/faq") ? "nav-active" : ""}>{t.faq}</a>
           <a href="/en/insights" className={pathname.includes("/insights") ? "nav-active" : ""}>{t.insights}</a>
           <a href={`${base}/contact`} className={pathname.includes("/contact") ? "nav-active" : ""}>{t.contact}</a>
@@ -65,8 +63,7 @@ export default function Header() {
       {/* Mobile dropdown */}
       {menuOpen && (
         <nav className="nav-mobile-menu">
-          <a href={`${base}/services`} className={pathname.includes("/services") ? "nav-active" : ""} onClick={close}>{t.services}</a>
-          <a href={`${base}/pricing`} className={pathname.includes("/pricing") ? "nav-active" : ""} onClick={close}>{t.pricing}</a>
+          <a href={`${base}/packages`} className={pathname.includes("/packages") ? "nav-active" : ""} onClick={close}>{t.packages}</a>
           <a href={`${base}/faq`} className={pathname.includes("/faq") ? "nav-active" : ""} onClick={close}>{t.faq}</a>
           <a href="/en/insights" className={pathname.includes("/insights") ? "nav-active" : ""} onClick={close}>{t.insights}</a>
           <a href={`${base}/contact`} className={pathname.includes("/contact") ? "nav-active" : ""} onClick={close}>{t.contact}</a>
