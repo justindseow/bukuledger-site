@@ -234,7 +234,7 @@ export const content: Record<Locale, LocaleContent> = {
       waText: "Hi MacroByte. I'd like to ask about your services.",
     },
     pricing: {
-      title: "Bookkeeping & Finance Packages for Malaysian SMEs",
+      title: "Bookkeeping & Finance Packages",
       lead: "Everything included, clearly priced. Choose one module or combine.",
       from: "From",
       per: "/ month",
@@ -421,7 +421,7 @@ export const content: Record<Locale, LocaleContent> = {
       waText: "Hi MacroByte. Saya ingin bertanya tentang perkhidmatan anda.",
     },
     pricing: {
-      title: "Pakej Perakaunan & Kewangan untuk PKS Malaysia",
+      title: "Pakej Perakaunan & Kewangan",
       lead: "Semua termasuk, harga yang jelas. Pilih satu modul atau gabungkan.",
       from: "Dari",
       per: "/ bulan",
@@ -620,7 +620,7 @@ export const content: Record<Locale, LocaleContent> = {
       waText: "Hi MacroByte. 我想询问您的服务。",
     },
     pricing: {
-      title: "记账与财务服务套餐",
+      title: "记账与财务套餐",
       lead: "服务内容清晰，定价透明。单选或自由组合。",
       from: "起",
       per: "/ 每月",
