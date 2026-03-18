@@ -1,3 +1,4 @@
+import IncludedToggle from "@/app/components/IncludedToggle";
 import {
   content,
   Locale,
@@ -73,6 +74,7 @@ const priceSchema = {
 
 export default function PackagesPage({ locale }: { locale: Locale }) {
   const t = content[locale].pricing;
+  const s = content[locale].services;
 
   const addons = [
     {
@@ -82,6 +84,7 @@ export default function PackagesPage({ locale }: { locale: Locale }) {
         t.arInvLine(AR_AP_INV_INCLUDED),
         t.arExtraLine(AR_AP_EXTRA_RATE, AR_AP_INV_INCLUDED),
       ],
+      items: s.ar.items,
       cta: t.arCta,
       wa: t.waAr,
     },
@@ -92,6 +95,7 @@ export default function PackagesPage({ locale }: { locale: Locale }) {
         t.apInvLine(AR_AP_INV_INCLUDED),
         t.apExtraLine(AR_AP_EXTRA_RATE, AR_AP_INV_INCLUDED),
       ],
+      items: s.ap.items,
       cta: t.apCta,
       wa: t.waAp,
     },
@@ -102,6 +106,7 @@ export default function PackagesPage({ locale }: { locale: Locale }) {
         t.payrollEmpLine(PAYROLL_EMP_INCLUDED),
         t.payrollExtraLine(PAYROLL_EXTRA_RATE),
       ],
+      items: s.payroll.items,
       cta: t.payrollCta,
       wa: t.waPayroll,
     },
@@ -148,7 +153,11 @@ export default function PackagesPage({ locale }: { locale: Locale }) {
             </ul>
           </div>
 
-          <div style={{ marginTop: 20 }}>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <IncludedToggle items={s.bookkeeping.items} twoCol />
+          </div>
+
+          <div style={{ marginTop: 16 }}>
             <a
               className="btn-primary"
               href={t.waOnboard}
@@ -234,6 +243,7 @@ export default function PackagesPage({ locale }: { locale: Locale }) {
                     <li key={i}>{line}</li>
                   ))}
                 </ul>
+                <IncludedToggle items={svc.items} />
                 <a
                   className="btn-outline-dark"
                   href={svc.wa}
