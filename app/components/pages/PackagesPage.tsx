@@ -73,7 +73,6 @@ const priceSchema = {
 
 export default function PackagesPage({ locale }: { locale: Locale }) {
   const t = content[locale].pricing;
-  const s = content[locale].services;
 
   const addons = [
     {
@@ -83,7 +82,6 @@ export default function PackagesPage({ locale }: { locale: Locale }) {
         t.arInvLine(AR_AP_INV_INCLUDED),
         t.arExtraLine(AR_AP_EXTRA_RATE, AR_AP_INV_INCLUDED),
       ],
-      items: s.ar.items,
       cta: t.arCta,
       wa: t.waAr,
     },
@@ -94,7 +92,6 @@ export default function PackagesPage({ locale }: { locale: Locale }) {
         t.apInvLine(AR_AP_INV_INCLUDED),
         t.apExtraLine(AR_AP_EXTRA_RATE, AR_AP_INV_INCLUDED),
       ],
-      items: s.ap.items,
       cta: t.apCta,
       wa: t.waAp,
     },
@@ -105,7 +102,6 @@ export default function PackagesPage({ locale }: { locale: Locale }) {
         t.payrollEmpLine(PAYROLL_EMP_INCLUDED),
         t.payrollExtraLine(PAYROLL_EXTRA_RATE),
       ],
-      items: s.payroll.items,
       cta: t.payrollCta,
       wa: t.waPayroll,
     },
@@ -151,12 +147,6 @@ export default function PackagesPage({ locale }: { locale: Locale }) {
               <li>{t.extraLine(TX_EXTRA_RATE, TX_INCLUDED)}</li>
             </ul>
           </div>
-
-          <ul className="svc-list svc-list-2col" style={{ marginTop: 16, textAlign: "left" }}>
-            {s.bookkeeping.items.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
 
           <div style={{ marginTop: 20 }}>
             <a
@@ -242,11 +232,6 @@ export default function PackagesPage({ locale }: { locale: Locale }) {
                 <ul className="pricing-svc-points" style={{ marginTop: 12 }}>
                   {svc.lines.map((line, i) => (
                     <li key={i}>{line}</li>
-                  ))}
-                </ul>
-                <ul className="svc-list" style={{ fontSize: "13px", marginTop: 10 }}>
-                  {svc.items.map((item) => (
-                    <li key={item}>{item}</li>
                   ))}
                 </ul>
                 <a
