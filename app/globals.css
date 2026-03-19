@@ -1201,10 +1201,13 @@ select option {
   margin: 0 auto;
 }
 
-.hc-eyebrow{
-  font-size: 13px;
-  color: #64748b;
-  margin-bottom: 4px;
+.hc-result-pre{
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin: 0 0 6px;
 }
 
 .hc-progress-bar{
