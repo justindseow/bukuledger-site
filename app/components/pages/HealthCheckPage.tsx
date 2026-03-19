@@ -392,13 +392,12 @@ export default function HealthCheckPage() {
   }
 
   const total = answers.reduce((a, b) => a + b, 0);
-  const clarityScore = MAX_SCORE - total; // higher = better
   const profile = getProfile(total);
   const progress =
     phase === "result" ? 100 : (current / questions.length) * 100;
 
   const waMsg = encodeURIComponent(
-    `Hi MacroByte — I just did the SME Health Check and got "${profile.title}" with a Financial Clarity Score of ${clarityScore}/${MAX_SCORE}. I'd like to find out more.`
+    `Hi MacroByte — I just did the SME Health Check and got "${profile.title}". I'd like to find out more.`
   );
   const waHref = `https://wa.me/${WHATSAPP}?text=${waMsg}`;
 
@@ -495,14 +494,6 @@ export default function HealthCheckPage() {
               >
                 {profile.label}
               </span>
-
-              <div className="hc-score-row">
-                <span className="hc-score-label">Financial Clarity Score</span>
-                <span className="hc-score-value">
-                  {clarityScore}
-                  <span className="hc-score-max">/{MAX_SCORE}</span>
-                </span>
-              </div>
 
               <p className="hc-result-body">{profile.body}</p>
               <hr className="hc-result-divider" />
