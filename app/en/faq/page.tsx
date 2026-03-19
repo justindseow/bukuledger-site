@@ -4,7 +4,7 @@ import FaqPage from "@/app/components/pages/FaqPage";
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
   description:
-    "Answers to common questions about MacroByte bookkeeping and finance services for SMEs in Malaysia — pricing, process, software, and more.",
+    "Answers to common questions about MacroByte bookkeeping and finance services for SMEs in Malaysia - pricing, process, software, and more.",
   alternates: { canonical: "/en/faq" },
   openGraph: { url: "/en/faq" },
 };

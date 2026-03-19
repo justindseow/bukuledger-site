@@ -197,7 +197,7 @@ export const content: Record<Locale, LocaleContent> = {
         tagline: "Know exactly what customers owe to follow-up faster.",
         items: [
           "Invoice tracking and recording",
-          "Aging report — overdue at a glance",
+          "Aging report - overdue at a glance",
           "Customer payment follow-up notes",
           "Reconciliation against bank receipts",
         ],
@@ -208,7 +208,7 @@ export const content: Record<Locale, LocaleContent> = {
         items: [
           "Supplier invoice processing and recording",
           "Payment schedule management",
-          "Aging report — outstanding payables",
+          "Aging report - outstanding payables",
           "Reconciliation against bank payments",
         ],
       },
@@ -223,7 +223,7 @@ export const content: Record<Locale, LocaleContent> = {
         ],
       },
       bundle: {
-        title: "Complete Package — All Four",
+        title: "Complete Package - All Four",
         body: "Bookkeeping, AR, AP and Payroll under one roof. One point of contact, complete financial visibility.",
         cta: "Ask about the complete package",
         waText:
@@ -270,7 +270,7 @@ export const content: Record<Locale, LocaleContent> = {
       waPayroll: wa("Hi. I would like to get started with Payroll."),
       bundleTitle: "Complete Package",
       bundleBody:
-        "All four services — Bookkeeping, AR, AP and Payroll. One team, one monthly report, complete financial visibility.",
+        "All four services - Bookkeeping, AR, AP and Payroll. One team, one monthly report, complete financial visibility.",
       bundleCta: "Ask about the complete package",
       waBundle: wa(
         "Hi. I'm interested in the Complete Package (Bookkeeping + AR + AP + Payroll)."
@@ -384,7 +384,7 @@ export const content: Record<Locale, LocaleContent> = {
         tagline: "Ketahui dengan tepat berapa yang perlu diterima daripada pelanggan.",
         items: [
           "Penjejakan dan pencatatan invois",
-          "Laporan penuaan — tunggakan sekilas pandang",
+          "Laporan penuaan - tunggakan sekilas pandang",
           "Catatan susulan pembayaran pelanggan",
           "Rekonsiliasi dengan resit bank",
         ],
@@ -395,7 +395,7 @@ export const content: Record<Locale, LocaleContent> = {
         items: [
           "Pemprosesan dan pencatatan invois pembekal",
           "Pengurusan jadual pembayaran",
-          "Laporan penuaan — baki belum bayar",
+          "Laporan penuaan - baki belum bayar",
           "Rekonsiliasi dengan pembayaran bank",
         ],
       },
@@ -410,7 +410,7 @@ export const content: Record<Locale, LocaleContent> = {
         ],
       },
       bundle: {
-        title: "Pakej Lengkap — Keempat-empat Modul",
+        title: "Pakej Lengkap - Keempat-empat Modul",
         body: "Perakaunan, Akaun Belum Terima, Akaun Belum Bayar dan Penggajian di bawah satu bumbung. Satu titik hubungan, gambaran kewangan yang lengkap.",
         cta: "Tanya tentang pakej lengkap",
         waText:
@@ -469,7 +469,7 @@ export const content: Record<Locale, LocaleContent> = {
       waPayroll: wa("Hi. Saya ingin memulakan perkhidmatan Penggajian."),
       bundleTitle: "Pakej Lengkap",
       bundleBody:
-        "Keempat-empat perkhidmatan — Perakaunan, ABT, ABB dan Penggajian. Satu pasukan, satu laporan bulanan, gambaran kewangan yang penuh.",
+        "Keempat-empat perkhidmatan - Perakaunan, ABT, ABB dan Penggajian. Satu pasukan, satu laporan bulanan, gambaran kewangan yang penuh.",
       bundleCta: "Tanya tentang pakej lengkap",
       waBundle: wa(
         "Hi. Saya berminat dengan Pakej Lengkap (Perakaunan + ABT + ABB + Penggajian)."
@@ -583,7 +583,7 @@ export const content: Record<Locale, LocaleContent> = {
         tagline: "清楚掌握客户欠款，加快回款速度。",
         items: [
           "发票追踪与记录",
-          "账龄报告 — 一目了然逾期情况",
+          "账龄报告 - 一目了然逾期情况",
           "客户付款跟进备注",
           "与银行收款核对",
         ],
@@ -594,7 +594,7 @@ export const content: Record<Locale, LocaleContent> = {
         items: [
           "供应商发票处理与记录",
           "付款计划管理",
-          "账龄报告 — 未付款项一览",
+          "账龄报告 - 未付款项一览",
           "与银行付款核对",
         ],
       },
@@ -609,7 +609,7 @@ export const content: Record<Locale, LocaleContent> = {
         ],
       },
       bundle: {
-        title: "完整套餐 — 全部四项",
+        title: "完整套餐 - 全部四项",
         body: "记账、应收账款、应付账款与薪资服务，一站式打理。一个联系人，全方位财务透明度。",
         cta: "询问完整套餐",
         waText:
@@ -668,7 +668,7 @@ export const content: Record<Locale, LocaleContent> = {
       waPayroll: wa("Hi. 我想开始办理薪资服务。"),
       bundleTitle: "完整套餐",
       bundleBody:
-        "四项服务全包 — 记账、应收账款、应付账款与薪资。一个团队，一份月报，完整财务视野。",
+        "四项服务全包 - 记账、应收账款、应付账款与薪资。一个团队，一份月报，完整财务视野。",
       bundleCta: "询问完整套餐",
       waBundle: wa(
         "Hi. 我想了解完整套餐（记账 + 应收账款 + 应付账款 + 薪资）。"

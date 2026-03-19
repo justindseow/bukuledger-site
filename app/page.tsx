@@ -34,7 +34,7 @@ export default function Home() {
           }}
         />
 
-        {/* Left-side dark gradient — covers left 45%, fades out by 70% */}
+        {/* Left-side dark gradient - covers left 45%, fades out by 70% */}
         <div
           style={{
             position: "absolute",

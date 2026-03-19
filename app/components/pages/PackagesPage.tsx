@@ -136,7 +136,7 @@ export default function PackagesPage({ locale }: { locale: Locale }) {
         <h1 className="page-title">{t.title}</h1>
         <p className="page-lead">{t.lead}</p>
 
-        {/* ── Bookkeeping — featured main card ── */}
+        {/* ── Bookkeeping - featured main card ── */}
         <div className="pricing-bk-main" style={{ marginTop: 28 }}>
           <div className="pricing-bk-top">
             <div>
