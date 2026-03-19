@@ -17,6 +17,7 @@ export default function Header() {
     faq: isBM ? "Soalan Lazim" : isZH ? "常见问题" : "FAQ",
     contact: isBM ? "Hubungi" : isZH ? "联系" : "Contact",
     insights: isBM ? "Panduan" : isZH ? "指南" : "Insights",
+    healthCheck: isBM ? "Semak Kewangan" : isZH ? "财务检查" : "Health Check",
   };
 
   const close = () => setMenuOpen(false);
@@ -33,6 +34,7 @@ export default function Header() {
           <a href={`${base}/packages`} className={pathname.includes("/packages") ? "nav-active" : ""}>{t.packages}</a>
           <a href={`${base}/faq`} className={pathname.includes("/faq") ? "nav-active" : ""}>{t.faq}</a>
           <a href="/en/insights" className={pathname.includes("/insights") ? "nav-active" : ""}>{t.insights}</a>
+          <a href={`${base}/health-check`} className={pathname.includes("/health-check") ? "nav-active" : ""}>{t.healthCheck}</a>
           <a href={`${base}/contact`} className={pathname.includes("/contact") ? "nav-active" : ""}>{t.contact}</a>
 
           <div className="lang-switcher">
@@ -66,6 +68,7 @@ export default function Header() {
           <a href={`${base}/packages`} className={pathname.includes("/packages") ? "nav-active" : ""} onClick={close}>{t.packages}</a>
           <a href={`${base}/faq`} className={pathname.includes("/faq") ? "nav-active" : ""} onClick={close}>{t.faq}</a>
           <a href="/en/insights" className={pathname.includes("/insights") ? "nav-active" : ""} onClick={close}>{t.insights}</a>
+          <a href={`${base}/health-check`} className={pathname.includes("/health-check") ? "nav-active" : ""} onClick={close}>{t.healthCheck}</a>
           <a href={`${base}/contact`} className={pathname.includes("/contact") ? "nav-active" : ""} onClick={close}>{t.contact}</a>
         </nav>
       )}
