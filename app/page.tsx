@@ -10,7 +10,7 @@ export default function Home() {
           flex: 1,
           display: "flex",
           alignItems: "flex-start",
-          paddingTop: "110px",
+          paddingTop: "76px",
           overflow: "hidden",
         }}
       >
